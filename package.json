@@ -1,0 +1,25 @@
+{
+  "name": "swarm-archive",
+  "version": "1.0.0",
+  "description": "Eight hundred winters, one lapsed invoice — Swarm archive publisher and recovery tool",
+  "main": "dist/cli.js",
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc",
+    "publish-archive": "tsx src/cli.ts publish",
+    "recover-archive": "tsx src/cli.ts recover",
+    "test": "tsx test/run.ts"
+  },
+  "keywords": ["swarm", "bee", "archive", "feed"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@ethersphere/bee-js": "^13.1.0",
+    "dotenv": "^18.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.2",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
